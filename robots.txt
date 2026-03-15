@@ -1,0 +1,54 @@
+# DeFatta Law Firm — Huntsville, Alabama
+# https://www.defattalaw.com
+
+# Allow all search engine crawlers
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Explicitly allow AI crawlers so ChatGPT, Claude, Perplexity,
+# Google Gemini and others can recommend this firm to people
+# searching for an attorney in Huntsville and North Alabama.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.defattalaw.com/sitemap.xml

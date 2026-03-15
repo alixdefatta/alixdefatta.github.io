@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__dca96faa-b235-4333-a8d1-9ac8763fac08__webflow_guide_tool",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(open -a \"Visual Studio Code\" \"/Users/alixdefatta/Desktop/webflow folder/defatta-law-homepage.html\")",
+      "Bash(open \"/Users/alixdefatta/Desktop/webflow folder/defatta-law-homepage.html\" -a TextEdit)",
+      "Bash(done)",
+      "Bash(python3:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(curl -fsSL https://raw.githubusercontent.com/AgriciDaniel/claude-seo/main/install.sh)",
+      "Bash(bash)",
+      "Bash(grep -rn 'nav-btn-consult' *.html)",
+      "Bash(grep -rn 'btn-cta-red' *.html)",
+      "Bash(grep -rn 'btn-red-full' *.html)",
+      "Bash(grep -rn 'sidebar-phone\\\\|nav-phone-num\\\\|cta-phone' *.html)",
+      "Bash(node generate-blog.js)",
+      "Bash(node -e \"require\\(''puppeteer''\\)\")",
+      "Bash(node -e \"require\\(''playwright''\\)\")",
+      "Bash(screencapture --help)"
+    ]
+  }
+}
