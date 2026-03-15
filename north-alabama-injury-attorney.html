@@ -127,6 +127,7 @@
         .nav-links-wrap { display: flex; align-items: stretch; }
         .nav-links { display: flex; list-style: none; align-items: stretch; }
         .nav-links a { padding: 0 20px; font-size: 12px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--dark); transition: color 0.2s; display: flex; align-items: center; }
+        .nav-links li { display: flex; align-items: center; }
         .nav-links a:hover { color: var(--primary); }
         .nav-cta { background: var(--secondary); color: white; padding: 0 28px; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; display: flex; align-items: center; transition: background 0.3s; }
         .nav-cta:hover { background: var(--primary); color: white; }
@@ -141,8 +142,10 @@
         .mobile-cta-link { background: var(--secondary) !important; color: white !important; text-align: center; }
         .page-hero { position: relative; min-height: 480px; background: url('Huntsville background.png') center 40% / cover no-repeat; display: flex; align-items: center; overflow: hidden; }
         .page-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(105deg, rgba(10,20,50,0.88) 0%, rgba(26,47,98,0.78) 50%, rgba(10,20,50,0.65) 100%); pointer-events: none; }
-        .page-hero .container { position: relative; z-index: 2; }
-        .page-hero-inner { max-width: 680px; padding: 70px 0; }
+        .page-hero .container { position: relative; z-index: 2; display: flex; align-items: flex-end; justify-content: space-between; }
+        .page-hero-inner { max-width: 560px; padding: 70px 0; }
+        .hero-photo-wrap { position: relative; z-index: 2; flex-shrink: 0; align-self: flex-end; margin-right: -24px; line-height: 0; }
+        .hero-photo { display: block; height: 560px; width: auto; max-width: 420px; object-fit: contain; object-position: bottom center; vertical-align: bottom; }
         .breadcrumb { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.55); font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 18px; }
         .breadcrumb a { color: rgba(255,255,255,0.55); }
         .page-hero h1 { color: white; font-size: clamp(32px, 4vw, 54px); font-weight: 700; margin-bottom: 20px; text-shadow: 0 2px 14px rgba(0,0,0,0.35); }
@@ -228,6 +231,8 @@
             .footer-main { grid-template-columns: 1fr; }
             .top-bar, .nav-links, .nav-cta { display: none; }
             .nav-hamburger { display: flex; }
+            .hero-photo-wrap { display: none; }
+            .page-hero-inner { max-width: 100%; }
         }
         @media (max-width: 600px) {
             .services-grid { grid-template-columns: 1fr; }
@@ -270,7 +275,11 @@
             <a href="tel:2562574674" class="btn-red">Call Now — Free Consultation</a>
             <a href="#overview" class="btn-ghost">Learn More ↓</a>
         </div>
-    </div></div>
+    </div>
+    <div class="hero-photo-wrap">
+        <img src="Phil transparent.png" alt="Phil DeFatta, North Alabama Personal Injury Attorney" class="hero-photo">
+    </div>
+    </div>
 </section>
 
 <div class="trust-bar"><div class="container">
